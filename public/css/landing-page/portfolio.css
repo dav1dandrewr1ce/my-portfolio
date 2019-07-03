@@ -1,0 +1,255 @@
+#portfolio{
+  padding: 80px 15px;
+}
+#portfolio .title{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#portfolio .title .square{
+  background: lightblue;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 80;
+}
+#portfolio .title h1{
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #16171b;
+  letter-spacing: 4px;
+}
+
+#portfolio .portfolio-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px;
+  grid-gap: 10px;
+}
+
+#portfolio .portfolio-container .box{
+  background: black;
+  display: block;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#portfolio .portfolio-container .box:hover{
+  background: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 40px 75px 24px rgba(0,0,0,0.12);
+-moz-box-shadow: 0px 40px 75px 24px rgba(0,0,0,0.12);
+box-shadow: 0px 40px 75px 24px rgba(0,0,0,0.12);
+}
+
+#portfolio .portfolio-container .box .image .hover-bg{
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0);
+  transition: all .5s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+#portfolio .portfolio-container .box:hover .image .hover-bg{
+  padding: 10px 20px;
+  background: rgba(255, 53, 53, 0.6);
+}
+
+#portfolio .portfolio-container .box .image .hover-bg .title{
+  height: 100%;
+  width: 100%;
+}
+#portfolio .portfolio-container .box .image .hover-bg .title .text{
+  background: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transform: translate3d(0, 400px, 0);
+  transition: all .5s ease-in-out;
+  opacity: 0;
+
+}
+#portfolio .portfolio-container .box:hover .image .hover-bg .title .text{
+  background: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* Box Locations */
+
+#portfolio .portfolio-container .box.image1 .image{
+  background: url("https://cdn.dribbble.com/users/2459949/screenshots/5552053/amsterdam.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#portfolio .portfolio-container .box.image1{
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+#portfolio .portfolio-container .box.image2 .image{
+  background: url("https://cdn.dribbble.com/users/757683/screenshots/6555182/ass_1_dribb_2x_2x.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#portfolio .portfolio-container .box.image2{
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+}
+
+#portfolio .portfolio-container .box.image3 .image{
+  background: url("https://cdn.dribbble.com/users/2061935/screenshots/6098905/trippy_travel_app_2x.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#portfolio .portfolio-container .box.image3{
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+#portfolio .portfolio-container .box.image4 .image{
+  background: url("https://cdn.dribbble.com/users/59947/screenshots/5894179/muti_dribbble-800x600.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#portfolio .portfolio-container .box.image4{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#portfolio .portfolio-container .box.image5 .image{
+  background: url("https://cdn.dribbble.com/users/418188/screenshots/6322456/food_order_website_design_tubik_2x.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#portfolio .portfolio-container .box.image5{
+  grid-column: 1 / 2;
+  grid-row: 4 / 6;
+}
+
+#portfolio .portfolio-container .box.image6 .image{
+  background: url("https://cdn.dribbble.com/users/13307/screenshots/6157473/web_site_design_3d_course.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#portfolio .portfolio-container .box.image6{
+  grid-column: 2 / 3;
+  grid-row: 3 / 6;
+}
+
+#portfolio .portfolio-container .box.image7 .image{
+  background: url("https://cdn.dribbble.com/users/1493069/screenshots/5760641/wwn_badge_set_2x.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#portfolio .portfolio-container .box.image7{
+  grid-column: 3 / 4;
+  grid-row: 4 / 6;
+}
+
+/* tablet */
+@media only screen and (max-width: 960px) {
+  #portfolio .portfolio-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px;
+    grid-gap: 15px;
+  }
+  #portfolio .portfolio-container .box.image1{
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+  }
+  #portfolio .portfolio-container .box.image2{
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+  }
+  #portfolio .portfolio-container .box.image3{
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+  }
+  #portfolio .portfolio-container .box.image4{
+    grid-column: 1 / 2;
+    grid-row: 5 / 7;
+  }
+  #portfolio .portfolio-container .box.image5{
+    grid-column: 2 / 4;
+    grid-row: 5 / 7;
+  }
+  #portfolio .portfolio-container .box.image6{
+    grid-column: 1 / 2;
+    grid-row: 7 / 9;
+  }
+  #portfolio .portfolio-container .box.image7{
+    grid-column: 2 / 4;
+    grid-row: 7 / 9;
+  }
+}
+
+/* phones */
+@media only screen and (max-width: 767px) {
+  #portfolio .portfolio-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+    grid-gap: 15px;
+  }
+  #portfolio .portfolio-container .box.image1{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+  #portfolio .portfolio-container .box.image2{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+  #portfolio .portfolio-container .box.image3{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+  #portfolio .portfolio-container .box.image4{
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+  }
+  #portfolio .portfolio-container .box.image5{
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+  }
+  #portfolio .portfolio-container .box.image6{
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+  }
+  #portfolio .portfolio-container .box.image7{
+    grid-column: 1 / 4;
+    grid-row: 7 / 8;
+  }
+}

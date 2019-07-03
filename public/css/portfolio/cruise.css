@@ -1,0 +1,121 @@
+#cruise{
+  padding: 100px 15px;
+}
+#cruise .project-image{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+#cruise .project-image .img{
+  width: 100%;
+  height: 450px;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  /* background-attachment: fixed !important; */
+}
+#cruise h1{
+  font-size: 4rem;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 1.8rem;
+}
+#cruise .info .buttons{
+  padding: 20px 0;
+}
+#cruise .info .buttons a{
+  display: inline-block;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-bottom: 1.8rem;
+  transition: all .3s ease-in-out;
+}
+#cruise .info .buttons a:hover{
+  background: #ff5253;
+}
+#cruise .info .buttons a .fas{
+  margin-right: 10px;
+  color: #ff5253;
+  transition: all .3s ease-in-out;
+}
+#cruise .info .buttons a:hover .fas{
+  color: black;
+}
+#cruise p{
+    color: #929294;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    margin-bottom: 1.8rem;
+    text-transform: capitalize;
+}
+#cruise h3{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+#cruise .technologies {
+  padding: 100px 0;
+}
+#cruise .technologies .icons{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+#cruise .technologies .icons img{
+  filter: grayscale(100%);
+  transition: all .4s ease-in-out;
+}
+#cruise .technologies .icons img:hover{
+  cursor: pointer;
+  filter: grayscale(0);
+}
+#cruise .technologies .icons .icon img{
+  width: 100%;
+  max-width: 60px;
+}
+#cruise .video{
+  text-align: center;
+}
+
+@media only screen and (max-width: 960px){
+
+  #cruise h1{
+    font-size: 3rem;
+    text-align: center;
+  }
+  #cruise p {
+      line-height: 1.7;
+      font-size: 1rem;
+      margin-bottom: 1.8rem;
+      text-transform: capitalize;
+  }
+  #cruise h3{
+    font-size: 2rem;
+    text-align: center;
+  }
+  #cruise .video iframe{
+      width: 100% !important;
+    }
+  #cruise .info .buttons{
+    text-align: center;
+  }
+  #cruise .technologies .icons img{
+    filter: grayscale(0);
+  }
+}
+@media only screen and (max-width: 767px){
+  #cruise .technologies .icons {
+    grid-template-columns: 1fr 1fr;
+  }
+  #cruise .technologies .icons img{
+    filter: grayscale(0);
+  }
+}

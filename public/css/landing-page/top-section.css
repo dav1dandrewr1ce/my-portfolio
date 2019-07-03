@@ -1,0 +1,98 @@
+#top{
+padding-bottom: 80px;
+}
+#top .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 0;
+  align-items: center;
+}
+#top .info{
+  padding: 15px;
+  position: relative;
+}
+#top .info .blue-square{
+  border: 20px solid lightblue;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -100px;
+  left: -200px;
+  z-index: -1;
+}
+
+#top .info h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 2rem;
+}
+#top .info p{
+  text-transform: capitalize;
+  color: #919191;
+  margin-bottom: 4rem;
+  line-height: 1.75;
+}
+#top .info a{
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+#top .img{
+  max-width: 500px;
+  border-radius: 5px;
+}
+#top .img .background-img{
+  background: url('../../img/portfolio-profile-pic.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 500px;
+  min-width: 182px;
+  height: 100vh;
+  max-height: 800px;
+  min-height: 340px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+/* tablet */
+@media only screen and (max-width: 960px) {
+
+}
+
+/* phones */
+@media only screen and (max-width: 768px) {
+  #top .container{
+    padding: 0 0 80px;
+  }
+  #top .info .blue-square{
+    display: none;
+  }
+  #top .img{
+    max-width: 500px;
+  }
+  #top .img .background-img{
+    height: 100vh;
+    max-width: 500px;
+    border-radius: 0;
+  }
+  #top .info h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 2rem;
+  }
+  #top .info p{
+    text-transform: capitalize;
+    color: #919191;
+    margin-bottom: 4rem;
+    line-height: 1.75;
+  }
+}
